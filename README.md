@@ -8,7 +8,7 @@ Application React/TypeScript affichant le tableau de bord de profil utilisateur 
 
 - **Node.js** v18+
 - **npm** v9+
-- *(Optionnel)* Le [backend SportSee](https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard) pour utiliser les données réelles
+- *(Optionnel)* Le [backend SportSee](https://github.com/OpenClassrooms-Student-Center/SportSee) pour utiliser les données réelles
 
 ---
 
@@ -16,7 +16,7 @@ Application React/TypeScript affichant le tableau de bord de profil utilisateur 
 
 ```bash
 # Cloner le repo
-git clone <url-du-repo>
+git clone https://github.com/nwyux/SportSee.git
 cd sport-see
 
 # Installer les dépendances
