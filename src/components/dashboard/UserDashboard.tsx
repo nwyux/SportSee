@@ -61,7 +61,7 @@ export default function UserDashboard({ data }: UserDashboardProps) {
 
   return (
     <main className="min-h-screen pl-[117px] pt-[91px] bg-[#F5F5F5]">
-      <div className="px-12 py-10 max-w-[1440px] mx-auto">
+      <div className="px-6 xl:px-12 py-10 max-w-[1440px] mx-auto">
 
         {/* Page heading */}
         <header className="mb-10">
@@ -75,7 +75,7 @@ export default function UserDashboard({ data }: UserDashboardProps) {
         </header>
 
         {/* Dashboard grid */}
-        <div className="flex gap-7">
+        <div className="flex gap-3 xl:gap-7">
 
           {/* Left column: charts */}
           <div className="flex-1 flex flex-col justify-between min-w-0">
@@ -84,7 +84,7 @@ export default function UserDashboard({ data }: UserDashboardProps) {
             <ActivityBarChart data={activity} />
 
             {/* Bottom row: 3 small charts */}
-            <div className="grid grid-cols-3 gap-7">
+            <div className="grid grid-cols-3 gap-2 xl:gap-7">
               <AverageSessionsChart data={averageSessions} />
               <PerformanceRadarChart data={performance} />
               <ScoreRadialChart score={userInfo.todayScore} />
@@ -94,7 +94,7 @@ export default function UserDashboard({ data }: UserDashboardProps) {
           {/* Right column: key data cards */}
           <aside
             aria-label="Données nutritionnelles clés"
-            className="w-[258px] flex flex-col gap-7 flex-shrink-0"
+            className="w-[228px] xl:w-[258px] flex flex-col gap-7 flex-shrink-0"
           >
             {keyCards.map((card) => (
               <KeyDataCard
